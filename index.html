@@ -1,0 +1,492 @@
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== Font Awesome ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"></script>
+<body> 
+    
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+            <img src="./assets/img/hoodie/TVANRUS icon.png"  alt="icon">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link ">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#footer" class="nav__link">About US</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class='bx bxs-moon' id="night-button"></i>
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <span id="cart-count" class="count">0</span>
+                </div>
+            
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+    
+        <h2 class="cart__title-center">My Cart</h2>
+    
+        <div class="cart__container">
+    <div class="cart__empty">
+        <img src="./assets/img/empty-cart.png" alt="empty cart">
+        <h2>Your cart is empty</h2>
+        <p>You can add items to your cart by clicking on the "<i class="bx bx-plus"></i>" button on the product page.</p>
+    </div>
+    </div>
+    
+        <div class="cart__prices">
+            <span class="cart__prices-item"><span id="items-count">0</span> items</span>
+            <span class="cart__prices-total" id="cart-total">$0.00</span>
+        </div>
+    
+        <div class="cart__checkout">
+            <button class="button cart__btn" id="cart-checkout">
+                <i class="bx bxs-check-shield"></i> 
+                Checkout
+            </button>
+        </div>
+    </div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+    
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="./assets/img/hoodie/bg_ai_venom.png" alt="" class="home__img pr__img">
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">NEW VENOM <br> COLLECTIONS </h1>
+                    <p class="home__description change ">
+                        The all new Tvanrus hoodie with bold anime-inspired design, blending style and edge
+                        <br>"Feel the Venom, Wear the Style!"
+                    </p>
+                    <span class="home__price">$26.00</span>
+                    <div class="home__btns">
+                        <a class="button button--gray button--small">
+                        Discover
+                        </a>
+                        <a href="#shirt"><button class="button home__button shop__button">ADD TO CART</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==================== BANNER ====================-->
+        <div class="banner">
+            <div class="container">
+              <div class="slider-container has-scrollbar">
+                <div class="slider-item">
+                  <img src="./assets/img/hoodie/ai_red_hoodie.png" alt="RED_HOODIE" class="banner-img">
+                  <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">Cartoon Red</h2>
+                    <p class="banner-text">
+                      starting at &dollar; <b>20</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                  </div>
+                </div>
+                <div class="slider-item">
+                    <img src="./assets/img/hoodie/ai_navy_hoodie.png" alt="modern sunglasses" class="banner-img">
+                    <div class="banner-content">
+                      <p class="banner-subtitle">Trending item</p>        
+                      <h2 class="banner-title">Cartoon Navy</h2>
+                      <p class="banner-text">
+                        starting at &dollar; <b>15</b>.00
+                      </p>
+                      <a href="#" class="banner-btn">Shop now</a>
+                    </div>
+                  </div> 
+                <div class="slider-item">
+                  <img src="./assets/img/hoodie/ai_brown_hoodie.png" alt="modern sunglasses" class="banner-img">
+                  <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>        
+                    <h2 class="banner-title">Plain Brown</h2>
+                    <p class="banner-text">
+                      starting at &dollar; <b>15</b>.00
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                  </div>
+                </div>        
+                <div class="slider-item">       
+                  <img src="./assets/img/hoodie/green_hoodie.png" alt="new fashion summer sale" class="banner-img">       
+                  <div class="banner-content">
+                    <p class="banner-subtitle">Trending item</p>
+                    <h2 class="banner-title">Plain Green</h2>
+                    <p class="banner-text">
+                      starting at &dollar; <b>29</b>.99
+                    </p>
+                    <a href="#" class="banner-btn">Shop now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="./assets/js/banner.js"></script>
+    <!--==================== PRODUCTS ====================-->
+        <section class="products" id="products">
+            <div class="products__container container">
+                <ul class="products__filters">
+                    <li class="products__item products__line active-product mixitup-control-active" data-filter="all">
+                        <h3 class="products__title" data-filter="all">
+                            Show All
+                        </h3>
+                        <span class="products__stock" data-filter="all">
+                            show all products
+                        </span>
+                    </li>
+                
+                    <li class="products__item products__line" data-filter=".hoodies">
+                        <h3 class="products__title" data-filter=".hoodies">
+                            Hoodies
+                        </h3>
+                        <span class="products__stock" id="hoodies" data-filter=".hoodies">
+                            4 products
+                        </span>
+                    </li>
+                
+                    <li class="products__item products__line" data-filter=".shirts">
+                        <h3 class="products__title" data-filter=".shirts">
+                            Shirts
+                        </h3>
+                        <span class="products__stock" id="shirt" data-filter=".shirts">
+                            5 products
+                        </span>
+                    </li>
+                
+                    <li class="products__item" data-filter=".venom-collection">
+                        <h3 class="products__title" id="venom-collection" data-filter=".venom-collection">
+                            Venom Collections
+                        </h3>
+                        <span class="products__stock" data-filter=".venom-collection">
+                            3 products
+                        </span>
+                    </li>
+                </ul>
+            
+                <div class="products__content grid" id="products__content">
+    <!-- Hoodies -->
+    <article class="products__card hoodies">
+        <div class="products__shape contenedor">
+            <img src="./assets/img/hoodie/ai_brown_hoodie.png" alt="hoodies" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$14.00 <span class="products__quantity">| Stock: 10</span></h2>
+            <h3 class="products__name">Hoodies</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="1"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card hoodies">
+        <div class="products__shape contenedor">
+            <img src="./assets/img/hoodie/ai_red_hoodie.png" alt="hoodies" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$14.00 <span class="products__quantity">| Stock: 10</span></h2>
+            <h3 class="products__name">Hoodies</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="4"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card hoodies">
+        <div class="products__shape contenedor">
+            <img src="./assets/img/featured1.png" alt="hoodies" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$14.00 <span class="products__quantity">| Stock: 10</span></h2>
+            <h3 class="products__name">Hoodies</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="5"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card hoodies">
+        <div class="products__shape contenedor">
+            <img src="./assets/img/hoodie/ai_navy_hoodie.png" alt="hoodies" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$14.00 <span class="products__quantity">| Stock: 10</span></h2>
+            <h3 class="products__name">Hoodies</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="6"></i>
+            </button>
+        </div>
+    </article>
+    <!-- Shirts -->
+    <article class="products__card shirts">
+        <div class="products__shape">
+            <img src="./assets/img/featured2.png" alt="shirts" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 15</span></h2>
+            <h3 class="products__name">Shirts</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="2"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card shirts">
+        <div class="products__shape">
+            <img src="./assets/img/featured2.png" alt="shirts" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 15</span></h2>
+            <h3 class="products__name">Shirts</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="7"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card shirts">
+        <div class="products__shape">
+            <img src="./assets/img/featured2.png" alt="shirts" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 15</span></h2>
+            <h3 class="products__name">Shirts</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="8"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card shirts">
+        <div class="products__shape">
+            <img src="./assets/img/featured2.png" alt="shirts" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 15</span></h2>
+            <h3 class="products__name">Shirts</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="9"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card shirts">
+        <div class="products__shape">
+            <img src="./assets/img/featured2.png" alt="shirts" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 15</span></h2>
+            <h3 class="products__name">Shirts</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="10"></i>
+            </button>
+        </div>
+    </article>
+    <!-- Venom Collection -->
+    <article class="products__card venom-collection">
+        <div class="products__shape">
+            <img src="./assets/img/featured3.png" alt="venom-collection" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 20</span></h2>
+            <h3 class="products__name">Venom Collection</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="3"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card venom-collection">
+        <div class="products__shape">
+            <img src="./assets/img/featured3.png" alt="venom-collection" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 20</span></h2>
+            <h3 class="products__name">Venom Collection</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="11"></i>
+            </button>
+        </div>
+    </article>
+    <article class="products__card venom-collection">
+        <div class="products__shape">
+            <img src="./assets/img/featured3.png" alt="venom-collection" class="products__img">
+        </div>
+        <div class="products__data">
+            <h2 class="products__price">$24.00 <span class="products__quantity">| Stock: 20</span></h2>
+            <h3 class="products__name">Venom Collection</h3>
+            <button class="button products__button">
+                <i class="bx bx-plus" data-id="12"></i>
+            </button>
+        </div>
+    </article>
+</div>
+   </section>
+    
+  
+            <!--
+              - SERVICE
+            -->
+  
+            <div class="service">
+
+                <h2 class="title">Our Services</h2>
+            
+                <div class="service-container">
+            
+                  <a href="#" class="service-item">
+                    <div class="service-icon">
+                      <ion-icon name="boat-outline"></ion-icon>
+                    </div>
+                    <div class="service-content">
+                      <h3 class="service-title">       Worldwide Delivery</h3>
+                      <p class="service-desc">For Order Over $100</p>
+                    </div>
+                  </a>
+            
+                  <a href="#" class="service-item">
+                    <div class="service-icon">
+                      <ion-icon name="rocket-outline"></ion-icon>
+                    </div>
+                    <div class="service-content">
+                      <h3 class="service-title">Next Day delivery</h3>
+                      <p class="service-desc">Coimbatore Orders Only</p>
+                    </div>
+                  </a>
+            
+                  <a href="#" class="service-item">
+                    <div class="service-icon">
+                      <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="service-content">
+                      <h3 class="service-title">Best Online Support</h3>
+                      <p class="service-desc">Hours: 8AM - 11PM</p>
+                    </div>
+                  </a>
+            
+                  <a href="#" class="service-item">
+                    <div class="service-icon">
+                      <ion-icon name="arrow-undo-outline"></ion-icon>
+                    </div>
+                    <div class="service-content">
+                      <h3 class="service-title">Return Policy</h3>
+                      <p class="service-desc">Easy & Free Return</p>
+                    </div>
+                  </a>
+            
+                  <a href="#" class="service-item">
+                    <div class="service-icon">
+                      <ion-icon name="ticket-outline"></ion-icon>
+                    </div>
+                    <div class="service-content">
+                      <h3 class="service-title">30% money back</h3>
+                      <p class="service-desc">For Order Over $100</p>
+                    </div>
+                  </a>
+            
+                </div>
+            
+              </div>
+            
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+              <script src="./assets/js/service.js"></script>            
+  
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our Information</h3>
+                <p>
+                    Well there is nothing to <br>say about us </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links menu">
+                    <li>
+                        <a href="https://i.pinimg.com/originals/70/10/7f/70107f4fd9eefcf6d958f947e2d938b6.gif" target="_blank" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="https://as1.ftcdn.net/v2/jpg/00/53/91/80/1000_F_53918053_JpCWSPxWvlm11EdXTFyLTBiwy4fi4vwE.jpg" target="_blank" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer__link">About Developer</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer__link">Locate us</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links menu">
+                    <li>
+                        <a href="#hoodies" class="footer__link">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#shirt" class="footer__link">Shirts</a>
+                    </li>
+                    <li>
+                        <a href="#venom-collection" class="footer__link">Oversized</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="footer__content">
+                <h3 class="footer__title">Social Links</h3>
+
+                <ul class="footer__social menu">
+                    <a href="https://www.github.com/dhivanan46" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/dhivanan1220" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/dhivanan_" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <h3 align="center" >TVANRUS</h3>
+     </footer>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+
+    <script src="./assets/main/main.js"></script>
+
+<div id="wot-new-assistant-container"><div data-reactroot=""></div></div></body></html>
